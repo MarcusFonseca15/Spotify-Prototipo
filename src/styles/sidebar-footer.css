@@ -1,6 +1,7 @@
 body{
     background-color: #000;
     color: #f1f0ff;
+    font-family: var(--font-dm-sans);
 }
 
 a:hover{
