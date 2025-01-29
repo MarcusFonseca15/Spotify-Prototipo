@@ -81,3 +81,33 @@
     border-radius: 40px;
     cursor: pointer;
 }
+
+.intro{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 20px;
+    padding: 30px;
+}
+.main-container .sessoes-title{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+<div class="main-container">
+
+
+<nav>
+    <intro> Boa Tarde! </intro>
+    <section>
+    Navegar por todas as sessões
+    </section>
+</nav>
+</div> <!--MAIN CONTAINER-->
