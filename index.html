@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="" class="./src/styles/vars.css"> <!--Coloco antes de carregar o projeto do sidebar pra pegar as variaveis dele ANTES de tudo-->
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
 
     <!-- Links para trazer os ícones via CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
@@ -66,6 +67,26 @@
         
     </div>
     
+    <main>
+        <div class="main-container">
+            <nav class="header-nav">
+                <div class="navigation">
+                    <button class="seta-left"> <img src="./assets/icons/small-left.png"> </button>
+                    <button class="seta-right"> <img src="./assets/icons/small-right.png"></button>
+                </div>
+                    <div class="header-search">
+                        <img src="/assets/icons/search.png">
+                        <input type="text" if="search-input" maxlength="100" placeholder="O que você quer ouvir?">
+                    </div>
+
+                    <div class="header-login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+            </nav>
+        </div>
+    </main>
+
     <footer class="anuncio-premium">
         <div class="text">
             <p class="footer-title">TESTAR O PREMIUM DE GRAÇA</p>
