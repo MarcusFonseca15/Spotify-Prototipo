@@ -3,6 +3,9 @@ body{
     color: #f1f0ff;
 }
 
+a:hover{
+    cursor: pointer;
+}
 .sidebar{
     position: fixed;
     top: 0;
@@ -13,7 +16,7 @@ body{
     height: ;
 }
 .sidebar-navigation{
-    background-color: #2d2d43;
+    background-color: #121212;
     border-radius: 10px;
     padding: 1rem 0 0 1rem; /*left up down right*/
 }
@@ -44,41 +47,153 @@ body{
 }
 
 .sidebar-lib{
-    background-color: #2d2d43;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 1rem 0 0 1rem; /*left up down right*/
-    height: 10rem;
-}
-.sidebar-lib .lib-content{
-    display: flex;
+    background-color: #121212;
+    color: #b3b3b3;
+    border-radius: 8px;
+    display: flex; /*altera a posiçao dos objetos em diversas formas, colunas, linhas*/
     justify-content: space-between;
-}
-.sidebar-lib-title{
-    background-color: #202030c2;
-    padding: 5px;
-}
-
-.sidebar-lib a{
-    color: white;
-    text-decoration: none;
+    flex-direction: column; /*icone titulo e + ficam separados em 3 colunas*/
+    padding: 4px 8px; /*altura e lateral*/
     font-weight: 600;
     font-size: 14px;
+    margin-top: 10px; /*Descola do de cima*/
+}
+
+.sidebar-lib .lib-content{
+   display: flex;
+   justify-content: space-between; /*descolou o + do titulo*/
+}
+
+.sidebar-lib .lib-button{
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.sidebar-lib .lib-button .fa{
+    font-size: 20px;
+    margin-right: 10px; /*descola icone do titulo*/
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.sidebar-lib .lib-content .fa-plus{
+    margin: 24px 10px;
+}
+
+.section-playlist{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.section-playlist .section-playlist-content{
+    display: flex;
+    flex-direction: column;
+}
+.section-playlist-content .text{
+    padding-bottom: 14px;
+    color: white;
     font-family: "DM Sans", sans-serif;
 }
-
-.sidebar-lib button{
-    margin-left: 8rem;
-    border: 0;
-    border-radius: 50px;
-    background-color: transparent;
-    color: white;
+.section-playlist-content .title{
+    font-weight: 700;
+}
+.section-playlist-content .subtitle{
+    font-weight: 500;
+    font-size: 12px;
+}
+.section-playlist-content .section-playlist-button{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    width: 113px;
+    margin-top: 12px;
 }
 
-.sidebar-lib button .fa{
-    font-size: 20px;
-    font-weight: 300;
+.sidebar .cookies{
+    margin: 25px 20px;
+    font-family: "DM Sans", sans-serif;
+}
+.sidebar .cookies a{
     color: #b3b3b3;
-    margin-right: 10px;
-    padding-right: 8px;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.language .language-button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.anuncio-premium{
+    position: fixed; /*deixa especificamente embaixo*/
+    bottom: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #1b254c, #7a0ed2);
+    z-index: 1;
+}
+footer .text{
+    font-family: "DM Sans", sans-serif;
+    /*flex-shrink: 0; //não aperta o texto, mas impede responsividade. o video colocava, mas não gostei, então tirei*/
+}
+.footer-title{
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer-subtitle{
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-button{
+    border-radius: 20px;
+    border: 0;
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    padding: 14px 30px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
