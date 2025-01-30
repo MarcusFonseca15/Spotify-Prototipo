@@ -1,0 +1,5 @@
+@media screen and (max-width: 1015px) { /*dentro dessa resoluçao deve acontecer essas coisas*/
+    .offer-list-item{ /*ela carrega o display grid que diz qnd colunas tem na tela*/
+        grid-template-columns: 1fr 1fr; /*até o tamanho 1015px aparece 2, passou disso, aparece 5*/
+    }
+}

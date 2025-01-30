@@ -191,8 +191,11 @@ footer .text{
 .footer-button{
     border-radius: 20px;
     border: 0;
-    width: 150px;
-    height: 35px;
+    width: 175px;
+    height: 40px;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
     font-weight: bold;
     padding: 14px 30px;
     cursor: pointer;
