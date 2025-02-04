@@ -81,6 +81,11 @@
     border-radius: 40px;
     cursor: pointer;
 }
+
+.header-login .login:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
 /*<---------------PRINCIPAL----------------------->*/
 
 /* ----------- PLAYLIST ------------*/
