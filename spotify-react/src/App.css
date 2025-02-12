@@ -1,0 +1,32 @@
+.app-container {
+  display: flex;
+  height: 100vh; /*Garante que ocupe toda a tela*/
+  overflow: hidden; /*Impede que a tela role inteira, só o conteúdo rola*/
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto; /*Faz Principal rolar, Sidebar continua fixo*/
+}
+
+.header-nav {
+  height: 60px;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}

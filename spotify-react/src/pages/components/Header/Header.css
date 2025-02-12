@@ -1,0 +1,97 @@
+/* HEADER */
+.main-container {
+  max-width: 800vw;
+  height: 100vw;
+  margin-left: 320px;
+  margin-right: 56px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #121212;
+  position: relative;
+  margin: 10px 30px;
+  padding-left: 320px;
+}
+
+.header-nav .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-nav .navigation .seta-left {
+  margin-right: 1.25rem;
+}
+.seta-left,
+.seta-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  background: var(--bg-icon);
+  background-color: var(--bg-seta-color);
+  cursor: pointer;
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+}
+.header-search {
+  /*Div com img e Input, a caixa é a propria div*/
+  display: flex;
+  align-items: center;
+  width: 364px;
+  height: 48px;
+  margin-left: 8px;
+  background-color: #242424;
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+.header-search img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+.header-search input {
+  background: transparent;
+  border: none;
+  width: 360px;
+  padding: 0px 100px 0px 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /*mantem a pesquisa numa linha só, evita o row grande*/
+  outline: none;
+  color: white;
+}
+.header-login .subscribe {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  margin-right: 32px;
+  cursor: pointer;
+}
+.header-login .login {
+  width: 100px;
+  height: 48px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.header-login .login:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
