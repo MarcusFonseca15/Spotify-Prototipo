@@ -1,0 +1,8 @@
+.artist__header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(https://i.scdn.co/image/ab67618600001016909a162796dbc3629a1fadeb);
+}

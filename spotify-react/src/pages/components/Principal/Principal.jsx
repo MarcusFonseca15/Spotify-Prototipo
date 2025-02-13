@@ -5,26 +5,34 @@ import ItemList from "../ItemList/ItemList";
 import { artistArray } from "../../../assets/database/artists";
 import { songsArray } from "../../../assets/database/songs";
 
-const Principal = () => {
+const Principal = ({ type }) => {
   return (
     <div className="main">
       {/*ITEM LIST DE ARTISTAS */}
-      <ItemList
-        title="Artistas"
-        items={10}
-        itemsArray={artistArray}
-        path="/artists"
-        idPath="/artist" /*Para entrar na pag do artita */
-      />
+      {type === "artists" || type === undefined ? (
+        <ItemList
+          title="Artistas"
+          items={10}
+          itemsArray={artistArray}
+          path="/artists"
+          idPath="/artist" /*Para entrar na pag do artita */
+        />
+      ) : (
+        <></>
+      )}
 
       {/*ITEM LIST DE MUSICAS */}
-      <ItemList
-        title="Músicas"
-        items={24}
-        itemsArray={songsArray}
-        path="/songs"
-        idPath="song" /*Para entrar na música*/
-      />
+      {type === "songs" || type === undefined ? (
+        <ItemList
+          title="Músicas"
+          items={24}
+          itemsArray={songsArray}
+          path="/songs"
+          idPath="song" /*Para entrar na música*/
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
